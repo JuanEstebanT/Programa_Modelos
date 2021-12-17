@@ -1,17 +1,14 @@
 package Controlador;
-
 import Modelos.PjBuldier;
+import Vista.VentanaPrincipal;
 import Vista.Vista_Creador;
 import Vista.Vista_de_pj;
-
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.Objects;
 
-
 public class Controlador_creador {
-    Vista_de_pj vista_de_pj = new Vista_de_pj();
-    public Controlador_creador(Vista_Creador Vista, PjBuldier pjBuldier){
+    public Controlador_creador(Vista_Creador Vista, PjBuldier pjBuldier, VentanaPrincipal ventanaPrincipal,Vista_de_pj vista_de_pj ){
         Vista.BoxRaza.addFocusListener(new FocusListener() {
             @Override
             public void focusGained(FocusEvent e) {
@@ -24,11 +21,11 @@ public class Controlador_creador {
             }
         });
         Vista.listoButton.addActionListener(e -> {
+            Vista.dispose();
             pjBuldier.ConfigNombre(Vista.textNombre.getText()).ConfigRoll(Objects.requireNonNull(Vista.BoxRoll.getSelectedItem()).toString()).ConfigSexo(Vista.BoxSexo.getSelectedItem().toString()).ConfigRaza(Vista.BoxRaza.getSelectedItem().toString()).build();
             System.out.println(pjBuldier.getPjnuevo().toString());
             JOptionPane.showMessageDialog(null,"personaje creado exitosamente");
-            Vista.dispose();
-            Controlador_Vista_de_pj controlador_vista_de_pj = new Controlador_Vista_de_pj(vista_de_pj,pjBuldier);
+            Controlador_Vista_de_pj controlador_vista_de_pj = new Controlador_Vista_de_pj(vista_de_pj,pjBuldier,ventanaPrincipal);
         });
 
     }

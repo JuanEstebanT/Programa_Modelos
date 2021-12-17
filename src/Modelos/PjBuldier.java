@@ -1,15 +1,18 @@
 package Modelos;
 
+import java.util.ArrayList;
+
 public class PjBuldier extends AbstracBuildierPjs {
 
     private Personaje Pjnuevo;
+    private ArrayList<Personaje> PjGuardados = new ArrayList<Personaje>();
+
+    public ArrayList<Personaje> getPjGuardados() {
+        return PjGuardados;
+    }
 
     public Personaje getPjnuevo() {
         return Pjnuevo;
-    }
-
-    public void setPjnuevo(Personaje pjnuevo) {
-        Pjnuevo = pjnuevo;
     }
 
     public PjBuldier(){
@@ -22,6 +25,7 @@ public class PjBuldier extends AbstracBuildierPjs {
 
     @Override
     public Personaje build() {
+        PjGuardados.add(Pjnuevo);
         return Pjnuevo;
     }
 

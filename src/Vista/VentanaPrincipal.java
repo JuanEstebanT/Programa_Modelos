@@ -5,7 +5,7 @@ import javax.swing.*;
 public class VentanaPrincipal extends JFrame{
     public JButton crearButton;
     private JPanel panel1;
-    private JButton verCreadosButton;
+    public JButton verCreadosButton;
 
     public VentanaPrincipal(){
         setContentPane(panel1);
