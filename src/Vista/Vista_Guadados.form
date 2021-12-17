@@ -18,7 +18,7 @@
         <children>
           <component id="cb331" class="javax.swing.JLabel" binding="imagenPj">
             <constraints>
-              <grid row="1" column="0" row-span="5" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="0" row-span="5" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <text value=""/>
@@ -26,46 +26,42 @@
           </component>
           <component id="2ccee" class="javax.swing.JLabel" binding="Nombre_txt">
             <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font name="Century Gothic" size="16" style="1"/>
               <text value="Nombre"/>
             </properties>
           </component>
           <component id="3f72f" class="javax.swing.JLabel" binding="Raza_txt">
             <constraints>
-              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font name="Century Gothic" size="16" style="1"/>
               <text value="Raza"/>
             </properties>
           </component>
           <component id="f77fe" class="javax.swing.JLabel" binding="Rol_txt">
             <constraints>
-              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font name="Century Gothic" size="16" style="1"/>
               <text value="Rol"/>
             </properties>
           </component>
           <component id="ad2e" class="javax.swing.JLabel" binding="stats_txt">
             <constraints>
-              <grid row="4" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="4" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font name="Century Gothic" size="14" style="1"/>
               <text value="Stats"/>
             </properties>
             <clientProperties>
               <html.disable class="java.lang.Boolean" value="false"/>
             </clientProperties>
-          </component>
-          <component id="abbfc" class="javax.swing.JLabel" binding="Sexo_txt">
-            <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Sexo"/>
-            </properties>
           </component>
           <component id="f44d0" class="javax.swing.JButton" binding="buscarButton" default-binding="true">
             <constraints>
@@ -97,6 +93,24 @@
             </constraints>
             <properties>
               <text value="Volver"/>
+            </properties>
+          </component>
+          <component id="abbfc" class="javax.swing.JLabel" binding="Sexo_txt">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Century Gothic" size="16" style="1"/>
+              <text value="Sexo"/>
+            </properties>
+          </component>
+          <component id="d87e5" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Century Gothic" size="16" style="1"/>
+              <text value="Personaje"/>
             </properties>
           </component>
         </children>

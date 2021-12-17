@@ -19,6 +19,6 @@ public class Controlador_Prin {
             Vista_Guadados vista_guadados = new Vista_Guadados();
             Controlador_guardados controlador_guardados = new Controlador_guardados(vista_guadados,pjBuldier,Vista);
         });
-        
+
     }
 }

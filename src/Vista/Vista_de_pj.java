@@ -14,7 +14,7 @@ public class Vista_de_pj extends JFrame{
 
     public Vista_de_pj(){
         setContentPane(panel1);
-        setSize(500, 500);
+        setSize(450, 450);
         setResizable(false);
         setLocationRelativeTo(null);
         setTitle("Create PJ 1.0");
