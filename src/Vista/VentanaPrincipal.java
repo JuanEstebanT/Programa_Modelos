@@ -3,7 +3,7 @@ package Vista;
 import javax.swing.*;
 
 public class VentanaPrincipal extends JFrame{
-    private JButton crearButton;
+    public JButton crearButton;
     private JPanel panel1;
     private JButton verCreadosButton;
 

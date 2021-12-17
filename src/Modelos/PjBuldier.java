@@ -1,9 +1,18 @@
 package Modelos;
 
 public class PjBuldier extends AbstracBuildierPjs {
+
     private Personaje Pjnuevo;
 
-    private PjBuldier(){
+    public Personaje getPjnuevo() {
+        return Pjnuevo;
+    }
+
+    public void setPjnuevo(Personaje pjnuevo) {
+        Pjnuevo = pjnuevo;
+    }
+
+    public PjBuldier(){
         this.Pjnuevo = new Personaje();
     }
 
@@ -25,7 +34,10 @@ public class PjBuldier extends AbstracBuildierPjs {
     @Override
     public AbstracBuildierPjs ConfigRoll(String Rol) {
         switch (Rol){
-            case "Arquero": this.Pjnuevo.arquero();
+            case "Arquero": this.Pjnuevo.Arquero(); break;
+            case "Mago": this.Pjnuevo.Mago(); break;
+            case "Caballero": this.Pjnuevo.Caballero(); break;
+            case "Curandero": this.Pjnuevo.Curandero(); break;
             default: break;
         }
         return this;
