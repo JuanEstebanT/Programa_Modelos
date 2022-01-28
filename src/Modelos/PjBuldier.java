@@ -18,7 +18,7 @@ public class PjBuldier extends AbstracBuildierPjs {
         return Pjnuevo;
     }
     /*
-       oculta la instacia del demas codigo
+       oculta la instacia del demas codigo pruebasw
      */
     private PjBuldier(){
         this.Pjnuevo = new Personaje();
