@@ -1,6 +1,10 @@
 package Modelos;
 
 public class Roles extends Entity{
+
+    /*
+    * Metodos para modificar las estadisticas de los personajes segun el rol dado
+    * */
     public void Arquero(){
         setVida(100);
         setAgilidad(41);

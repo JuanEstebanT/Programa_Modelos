@@ -7,6 +7,9 @@ public class PjBuldier extends AbstracBuildierPjs {
     private Personaje Pjnuevo;
     private ArrayList<Personaje> PjGuardados = new ArrayList<Personaje>();
 
+    /*
+    Guarda los personajes creados
+     */
     public ArrayList<Personaje> getPjGuardados() {
         return PjGuardados;
     }
@@ -14,15 +17,19 @@ public class PjBuldier extends AbstracBuildierPjs {
     public Personaje getPjnuevo() {
         return Pjnuevo;
     }
-
-    public PjBuldier(){
+    /*
+       oculta la instacia del demas codigo
+     */
+    private PjBuldier(){
         this.Pjnuevo = new Personaje();
     }
 
     public static PjBuldier Pjnuevo(){
         return new PjBuldier();
     }
-
+/**
+ *  Metodos para configurar personaje
+ */
     @Override
     public Personaje build() {
         PjGuardados.add(Pjnuevo);

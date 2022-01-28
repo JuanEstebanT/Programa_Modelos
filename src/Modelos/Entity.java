@@ -1,5 +1,7 @@
 package Modelos;
-
+/*
+* Clase padre de las entidades
+* */
 public abstract class Entity {
      private String Raza;
      private String Roller;
